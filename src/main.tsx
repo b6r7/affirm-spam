@@ -4,8 +4,10 @@ import './app/i18n/config';
 import App from './app/App.tsx';
 import { ErrorBoundary } from './app/components/ErrorBoundary';
 import { PasswordGate } from './app/components/PasswordGate';
-import { isFigmaPlugin } from './env';
 import './styles/index.css';
+
+const isFigmaPlugin =
+  typeof globalThis !== 'undefined' && 'figma' in globalThis;
 
 const rootEl = document.getElementById('root');
 if (!rootEl) {

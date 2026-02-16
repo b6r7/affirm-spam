@@ -24,7 +24,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES_BASE: /affirm-spam/
-      - uses: actions/upload-pages-artifact@3
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: dist
 

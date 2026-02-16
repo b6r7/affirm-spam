@@ -1,0 +1,120 @@
+/** Static template content for en-US (source: app i18n locales). */
+import type { Tone, Variant } from '../messageTypes';
+
+export type VariantContent = {
+  greeting: string;
+  body: string;
+  footer: string;
+  cta: string;
+  legalText: string;
+  warning?: string;
+};
+
+export type TemplateContentMap = Record<Tone, Record<Variant, VariantContent>>;
+
+export const paymentReminder: TemplateContentMap = {
+  Supportive: {
+    A: {
+      greeting: 'Hi {name},',
+      body: 'We wanted to remind you about your upcoming payment.',
+      footer: "We're here to help if you need anything.",
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hi {name},',
+      body: 'Just a friendly reminder that you have a payment due soon.',
+      footer: 'Let us know if you have questions.',
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hi {name},',
+      body: "We're reaching out about your payment that's coming up.",
+      footer: "We're always here if you need us.",
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+  },
+  Neutral: {
+    A: {
+      greeting: 'Hello {name},',
+      body: 'Your payment is due soon. Please review and submit your payment.',
+      footer: '',
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hello {name},',
+      body: 'This is a reminder about your upcoming payment. Please complete it at your earliest convenience.',
+      footer: '',
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hello {name},',
+      body: 'You have a payment due. Please process your payment soon.',
+      footer: '',
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+  },
+  Firm: {
+    A: {
+      greeting: 'Hello {name},',
+      body: 'Your payment is overdue. Submit payment immediately.',
+      footer: '',
+      cta: 'Pay now',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hello {name},',
+      body: 'Action required: Complete your overdue payment now.',
+      footer: '',
+      cta: 'Pay now',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hello {name},',
+      body: 'Payment overdue. Process payment immediately to avoid issues.',
+      footer: '',
+      cta: 'Pay now',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+  },
+  Educational: {
+    A: {
+      greeting: 'Hi {name},',
+      body: 'Your payment helps maintain your loan in good standing. When payments are made on time, it keeps your account active and helps build your payment history.',
+      footer: "Questions about your payment? We're here to help.",
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hi {name},',
+      body: 'Making your payment on time is important for keeping your account in good standing and maintaining your payment schedule.',
+      footer: 'Need help understanding your payment? Contact us.',
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hi {name},',
+      body: 'Regular, on-time payments help you complete your loan successfully and can positively impact your credit profile.',
+      footer: 'Have questions? We\'re available to help.',
+      cta: 'Make a payment',
+      legalText: 'Loans made or arranged pursuant to a California Financing Law license. Affirm Loan Services, LLC, NMLS ID 1479506.',
+      warning: '',
+    },
+  },
+};

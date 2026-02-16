@@ -1,0 +1,110 @@
+/** Static template content for en-GB (source: app i18n locales). */
+import type { Tone, Variant } from '../messageTypes';
+import type { TemplateContentMap } from './en-US';
+
+export const paymentReminder: TemplateContentMap = {
+  Supportive: {
+    A: {
+      greeting: 'Hello {name},',
+      body: 'We wanted to remind you that your payment is due shortly.',
+      footer: 'Please do get in touch if you need assistance.',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hello {name},',
+      body: 'Just a gentle reminder about your upcoming payment.',
+      footer: "We're here to help should you need us.",
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hello {name},',
+      body: "We're writing to remind you about your payment that's due soon.",
+      footer: 'Do let us know if you have any questions.',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+  },
+  Neutral: {
+    A: {
+      greeting: 'Dear {name},',
+      body: 'Your payment is due shortly. Please review and submit your payment at your earliest convenience.',
+      footer: '',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Dear {name},',
+      body: 'This is a reminder that your payment is due. Please complete it when convenient.',
+      footer: '',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Dear {name},',
+      body: 'You have a payment due. Please process your payment shortly.',
+      footer: '',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+  },
+  Firm: {
+    A: {
+      greeting: 'Dear {name},',
+      body: 'Your payment is now overdue. Please submit payment promptly.',
+      footer: '',
+      cta: 'Pay now',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: 'Immediate payment is required.',
+    },
+    B: {
+      greeting: 'Dear {name},',
+      body: 'Action required: Your payment is overdue and must be completed.',
+      footer: '',
+      cta: 'Pay now',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: 'You must complete your payment without delay.',
+    },
+    C: {
+      greeting: 'Dear {name},',
+      body: 'Payment overdue. Submit payment immediately.',
+      footer: '',
+      cta: 'Pay now',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: 'Payment must be made promptly.',
+    },
+  },
+  Educational: {
+    A: {
+      greeting: 'Hello {name},',
+      body: 'Making your payment on time helps maintain your account in good standing and ensures your loan continues as planned.',
+      footer: 'If you have questions about your payment, please contact us.',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hello {name},',
+      body: 'Timely payments are important for keeping your account active and maintaining your agreed payment schedule.',
+      footer: "Need assistance? We're here to help.",
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hello {name},',
+      body: 'Regular payments help you complete your loan successfully and maintain a positive credit profile.',
+      footer: 'Questions? Please get in touch.',
+      cta: 'Make a payment',
+      legalText: 'Affirm Loan Services, LLC operates in accordance with applicable UK consumer credit regulations.',
+      warning: '',
+    },
+  },
+};

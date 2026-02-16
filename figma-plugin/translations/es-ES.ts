@@ -1,0 +1,110 @@
+/** Static template content for es-ES (source: app i18n locales). */
+import type { Tone, Variant } from '../messageTypes';
+import type { TemplateContentMap } from './en-US';
+
+export const paymentReminder: TemplateContentMap = {
+  Supportive: {
+    A: {
+      greeting: 'Hola {name},',
+      body: 'Queremos recordarte amablemente que tienes un pago pendiente próximo.',
+      footer: 'Estamos aquí para ayudarte si lo necesitas.',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hola {name},',
+      body: 'Solo un recordatorio amable sobre tu próximo pago.',
+      footer: 'Contáctanos si tienes alguna pregunta.',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hola {name},',
+      body: 'Te contactamos para recordarte tu pago que vence pronto.',
+      footer: 'Estamos disponibles si necesitas ayuda.',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+  },
+  Neutral: {
+    A: {
+      greeting: 'Hola {name},',
+      body: 'Tu pago vence pronto. Por favor, revisa y realiza tu pago.',
+      footer: '',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hola {name},',
+      body: 'Te recordamos que tienes un pago próximo. Por favor, complétalo cuando puedas.',
+      footer: '',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: 'Debes pagar tu saldo vencido cuanto antes.',
+    },
+    C: {
+      greeting: 'Hola {name},',
+      body: 'Tienes un pago pendiente. Por favor, procesa tu pago pronto.',
+      footer: '',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+  },
+  Firm: {
+    A: {
+      greeting: 'Estimado/a {name},',
+      body: 'Tu pago está vencido. Realiza el pago inmediatamente.',
+      footer: '',
+      cta: 'Pagar ahora',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: 'Debes pagar de inmediato.',
+    },
+    B: {
+      greeting: 'Estimado/a {name},',
+      body: 'Acción requerida: Completa tu pago vencido ahora.',
+      footer: '',
+      cta: 'Pagar ahora',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: 'Debes realizar el pago sin demora.',
+    },
+    C: {
+      greeting: 'Estimado/a {name},',
+      body: 'Pago vencido. Procesa el pago inmediatamente para evitar problemas.',
+      footer: '',
+      cta: 'Pagar ahora',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: 'Debes pagar tu saldo ahora.',
+    },
+  },
+  Educational: {
+    A: {
+      greeting: 'Hola {name},',
+      body: 'Realizar tu pago a tiempo ayuda a mantener tu cuenta al día y contribuye a construir tu historial de pagos positivo.',
+      footer: '¿Tienes preguntas sobre tu pago? Estamos aquí para ayudarte.',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+    B: {
+      greeting: 'Hola {name},',
+      body: 'Los pagos puntuales son importantes para mantener tu cuenta activa y tu calendario de pagos según lo acordado.',
+      footer: '¿Necesitas ayuda? Contáctanos.',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+    C: {
+      greeting: 'Hola {name},',
+      body: 'Los pagos regulares te ayudan a completar tu préstamo exitosamente y pueden impactar positivamente tu perfil crediticio.',
+      footer: '¿Preguntas? Estamos disponibles.',
+      cta: 'Realizar pago',
+      legalText: 'Préstamos otorgados según la normativa española de crédito al consumo. Affirm Loan Services, LLC.',
+      warning: '',
+    },
+  },
+};

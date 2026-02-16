@@ -11,10 +11,6 @@ A prototype for an internal comms tool that:
 - Supports a “create new template” flow with draft preview
 - Simulates exporting selected/all variants
 
-## What this is not (yet)
-- No persistence beyond Figma's clientStorage (plugin) or in-memory (web)
-- “Export to Dyspatch” is simulated
-
 ## Tech stack
 - React + TypeScript
 - Vite

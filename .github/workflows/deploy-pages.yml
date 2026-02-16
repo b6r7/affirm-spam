@@ -24,7 +24,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES_BASE: /affirm-spam/
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
@@ -36,4 +36,4 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - id: deploy
-        uses: actions/deploy-pages@4
+        uses: actions/deploy-pages@v4

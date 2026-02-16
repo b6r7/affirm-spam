@@ -25,7 +25,7 @@ jobs:
           if [ -f package-lock.json ]; then npm ci; else npm install; fi
       - run: npm run build
         env:
-          GITHUB_PAGES_BASE: /affirm-spam/
+          GITHUB_PAGES_BASE: ./
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

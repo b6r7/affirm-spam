@@ -7,9 +7,17 @@
       <title>Design Comms Forge Plugin</title>
     </head>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
+  <body>
+    <script>
+      (function() {
+        var p = location.pathname;
+        if (p.length > 1 && !p.endsWith('/') && !/\.\w+$/.test(p)) {
+          location.replace(p + '/' + location.search + location.hash);
+        }
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
   </html>
   

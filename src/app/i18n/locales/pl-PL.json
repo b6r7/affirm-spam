@@ -1,0 +1,110 @@
+{
+  "templates": {
+    "payment-reminder": {
+      "Supportive": {
+        "A": {
+          "greeting": "Dzień dobry {name},",
+          "body": "Chcielibyśmy przypomnieć o zbliżającej się płatności.",
+          "footer": "Jesteśmy dostępni, jeśli potrzebujesz pomocy.",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "B": {
+          "greeting": "Dzień dobry {name},",
+          "body": "To tylko uprzejme przypomnienie o nadchodzącej płatności.",
+          "footer": "Skontaktuj się z nami w razie pytań.",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "C": {
+          "greeting": "Dzień dobry {name},",
+          "body": "Kontaktujemy się w sprawie Twojej zbliżającej się płatności.",
+          "footer": "Jesteśmy do dyspozycji w razie potrzeby.",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        }
+      },
+      "Neutral": {
+        "A": {
+          "greeting": "Szanowny Kliencie {name},",
+          "body": "Termin płatności zbliża się. Prosimy o dokonanie płatności.",
+          "footer": "",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "B": {
+          "greeting": "Szanowny Kliencie {name},",
+          "body": "Przypominamy o zbliżającym się terminie płatności. Prosimy o jej realizację w najbliższym czasie.",
+          "footer": "",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "C": {
+          "greeting": "Szanowny Kliencie {name},",
+          "body": "Masz zaległą płatność. Prosimy o jej realizację w krótkim terminie.",
+          "footer": "",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        }
+      },
+      "Firm": {
+        "A": {
+          "greeting": "Szanowny Kliencie {name},",
+          "body": "Płatność jest przeterminowana. Prosimy o natychmiastowe uregulowanie należności.",
+          "footer": "",
+          "cta": "Zapłać teraz",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "B": {
+          "greeting": "Szanowny Kliencie {name},",
+          "body": "Wymagane działanie: Należy niezwłocznie uregulować zaległą płatność.",
+          "footer": "",
+          "cta": "Zapłać teraz",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "C": {
+          "greeting": "Szanowny Kliencie {name},",
+          "body": "Płatność przeterminowana. Prosimy o natychmiastowe uregulowanie należności.",
+          "footer": "",
+          "cta": "Zapłać teraz",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        }
+      },
+      "Educational": {
+        "A": {
+          "greeting": "Dzień dobry {name},",
+          "body": "Terminowe dokonywanie płatności pomaga utrzymać konto w dobrym stanie i buduje pozytywną historię kredytową.",
+          "footer": "Masz pytania dotyczące płatności? Jesteśmy dostępni.",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "B": {
+          "greeting": "Dzień dobry {name},",
+          "body": "Terminowe płatności są istotne dla utrzymania aktywności konta i zgodności z ustalonym harmonogramem spłat.",
+          "footer": "Potrzebujesz pomocy? Skontaktuj się z nami.",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        },
+        "C": {
+          "greeting": "Dzień dobry {name},",
+          "body": "Regularne płatności pomagają w pomyślnym zakończeniu spłaty pożyczki i pozytywnie wpływają na profil kredytowy.",
+          "footer": "Pytania? Jesteśmy dostępni.",
+          "cta": "Zrealizuj płatność",
+          "legalText": "Pożyczki udzielane zgodnie z polskim prawem konsumenckim. Affirm Loan Services, LLC.",
+          "warning": ""
+        }
+      }
+    }
+  }
+}

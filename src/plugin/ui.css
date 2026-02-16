@@ -1,0 +1,105 @@
+/**
+ * Plugin UI styles. Imported only from src/plugin/ui.tsx so Vite never references figma-plugin/.
+ * Tailwind + theme so the plugin UI matches the app.
+ */
+@import '../styles/tailwind.css';
+@import '../styles/theme.css';
+
+/* Root: no body scrollbars; only inner panels scroll. */
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Two-column app-like layout when plugin window is wide (≥720px).
+ * Scroll: only .comms-forge-layout__controls and .comms-forge-layout__preview scroll (overflow-y: auto).
+ * No horizontal scroll: flex children use min-width: 0 so they can shrink. */
+.comms-forge-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Left column: flex column; scrollable content + pinned insert bar at bottom */
+.comms-forge-layout__controls {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.comms-forge-layout__controls-scroll {
+  /* Only this area scrolls; insert bar stays pinned */
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.comms-forge-layout__insert-bar {
+  flex-shrink: 0;
+}
+
+.comms-forge-layout__preview {
+  flex: 0 0 auto;
+  min-height: 0;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 720px) {
+  .comms-forge-layout {
+    flex-direction: row;
+  }
+
+  .comms-forge-layout__controls {
+    width: 360px;
+    min-width: 360px;
+    flex: 0 0 auto;
+    border-right: 1px solid var(--border);
+    border-top: none;
+  }
+
+  .comms-forge-layout__preview {
+    flex: 1 1 auto;
+    min-width: 0;
+    border-top: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* When plugin window is wide, give panel full width so two-column layout has room */
+  .app-view__main {
+    display: none;
+  }
+
+  .app-view__panel {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+/* App view root: fill #root, no overflow; only inner panels scroll. */
+.plugin-app-root {
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
